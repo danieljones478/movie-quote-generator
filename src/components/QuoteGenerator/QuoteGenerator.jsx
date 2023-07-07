@@ -25,6 +25,7 @@ const QuoteGenerator = ({ data, copy_quote, load_quote, change_color }) => {
             load_quote();
             change_color();
           }}
+          title='Generate New Quote'
           aria-label='Load A New Quote'
           disabled={!data}>
           <FontAwesomeIcon icon={faRefresh} color='white' />
@@ -38,12 +39,14 @@ const QuoteGenerator = ({ data, copy_quote, load_quote, change_color }) => {
                 data.movie
             );
           }}
+          title='Share Current Quote On Twitter'
           aria-label='Link To Share Current Quote On Twitter'
           disabled={!data}>
           <FontAwesomeIcon icon={faTwitter} color='white' />
         </button>
         <button
           onClick={copy_quote}
+          title='Copy Current Quote'
           aria-label='Copy Current Quote'
           disabled={!data}>
           <FontAwesomeIcon icon={faCopy} color='white' />

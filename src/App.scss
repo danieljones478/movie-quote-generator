@@ -148,6 +148,8 @@ button:disabled {
 
       &:hover {
         transform: scale(1.09);
+        display: block;
+        transition-duration: 0s;
       }
 
       &:nth-child(1) {
